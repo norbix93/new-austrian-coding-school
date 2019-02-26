@@ -52,8 +52,8 @@ class DivisionTest {
     @Test
     void divisonByZero() {
         Expression expression = Expression.builder()
-                .number1(1)
-                .number2(0)
+                .number1(1.0)
+                .number2(0.0)
                 .build();
 
         double result = division.apply(expression);

@@ -39,9 +39,9 @@ class CalculatorTest {
     void calculateFailsBecauseOfUnknownSymbol() {
         String unknownSymbol = "$";
         Expression expression = Expression.builder()
-                .number1(1)
+                .number1(1.0)
                 .symbol(unknownSymbol)
-                .number2(1)
+                .number2(1.0)
                 .build();
 
         assertThrows(IllegalArgumentException.class, () -> calculator.calculate(expression));
