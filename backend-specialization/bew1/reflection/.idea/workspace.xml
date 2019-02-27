@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fd8e8a5-7c10-4ad3-ac0a-710fa9403411" name="Default Changelist" comment="" />
+    <list default="true" id="7fd8e8a5-7c10-4ad3-ac0a-710fa9403411" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../bew2/ex6-rock_scissors_paper_game/src/main/java/at/nacs/rock_scissors_paper_game/controller/Computer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bew2/ex6-rock_scissors_paper_game/src/main/java/at/nacs/rock_scissors_paper_game/controller/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bew2/ex6-rock_scissors_paper_game/src/main/java/at/nacs/rock_scissors_paper_game/controller/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bew2/ex6-rock_scissors_paper_game/src/main/java/at/nacs/rock_scissors_paper_game/controller/Judge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bew2/ex6-rock_scissors_paper_game/src/main/java/at/nacs/rock_scissors_paper_game/controller/Lizard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bew2/ex6-rock_scissors_paper_game/src/main/java/at/nacs/rock_scissors_paper_game/controller/Moves.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bew2/ex6-rock_scissors_paper_game/src/main/java/at/nacs/rock_scissors_paper_game/controller/Paper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bew2/ex6-rock_scissors_paper_game/src/main/java/at/nacs/rock_scissors_paper_game/controller/Rock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bew2/ex6-rock_scissors_paper_game/src/main/java/at/nacs/rock_scissors_paper_game/controller/Scissors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bew2/ex6-rock_scissors_paper_game/src/main/java/at/nacs/rock_scissors_paper_game/controller/Spock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bew2/ex6-rock_scissors_paper_game/src/main/java/at/nacs/rock_scissors_paper_game/model/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bew2/ex6-rock_scissors_paper_game/src/main/java/at/nacs/rock_scissors_paper_game/model/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bew2/ex6-rock_scissors_paper_game/src/main/java/at/nacs/rock_scissors_paper_game/view/GameApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bew2/ex6-rock_scissors_paper_game/src/test/java/at/nacs/rock_scissors_paper_game/controller/JudgeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coffeebeans_exercise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../coffeebeans_exercise/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java-foundations/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java-foundations/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,7 +29,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/controller/AssistantTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/controller/AssistantTest.java" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
@@ -18,11 +60,14 @@
     <option name="width" value="630" />
     <option name="height" value="555" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -51,8 +96,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -63,7 +106,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550917440319" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../coffeebeans_exercise/lib/lombok.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bew2/ex6-rock_scissors_paper_game" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -134,6 +177,7 @@
       <option name="presentableId" value="Default" />
       <updated>1550917284870</updated>
       <workItem from="1550917288022" duration="203000" />
+      <workItem from="1551264427087" duration="96000" />
     </task>
     <servers />
   </component>
@@ -143,25 +187,19 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203000" />
+    <option name="totallyTimeSpent" value="299000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24980047" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25378788" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Messages" weight="0.32954547" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32954547" />
@@ -169,31 +207,27 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32954547" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/controller/AssistantTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/FruitShopApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -203,6 +237,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/Assistant.java">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/AssistantTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
