@@ -1,10 +1,11 @@
-package at.nacs.rock_scissors_paper_game.controller;
+package at.nacs.rockpaperscissors.controller;
 
-import at.nacs.rock_scissors_paper_game.model.Move;
+import at.nacs.rockpaperscissors.model.Move;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
-import java.util.*;
+import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RequiredArgsConstructor

@@ -1,4 +1,4 @@
-/*package at.nacs.rock_scissors_paper_game.view;
+package at.nacs.rockpaperscissors.view;/*package at.nacs.rock_scissors_paper_game.view;
 
 
 import at.nacs.rock_scissors_paper_game.controller.Game;

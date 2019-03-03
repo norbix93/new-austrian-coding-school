@@ -1,13 +1,13 @@
-package at.nacs.rockpaperscissors.view;
+package at.nacs.reflection;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RockScissorsPaperGameApplication {
+public class ReflectionApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RockScissorsPaperGameApplication.class, args);
+        SpringApplication.run(ReflectionApplication.class, args);
     }
 
 }

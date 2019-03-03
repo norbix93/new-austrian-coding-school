@@ -1,6 +1,6 @@
-package at.nacs.rock_scissors_paper_game.controller;
+package at.nacs.rockpaperscissors.controller;
 
-import at.nacs.rock_scissors_paper_game.model.Move;
+import at.nacs.rockpaperscissors.model.Move;
 import org.springframework.stereotype.Component;
 
 @Component

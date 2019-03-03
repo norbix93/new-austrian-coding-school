@@ -1,7 +1,7 @@
-package at.nacs.rock_scissors_paper_game.controller;
+package at.nacs.rockpaperscissors.controller;
 
-import at.nacs.rock_scissors_paper_game.model.Move;
-import at.nacs.rock_scissors_paper_game.model.Player;
+import at.nacs.rockpaperscissors.model.Move;
+import at.nacs.rockpaperscissors.model.Player;
 import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;

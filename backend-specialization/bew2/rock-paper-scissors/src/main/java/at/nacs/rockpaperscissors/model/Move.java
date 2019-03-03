@@ -1,4 +1,4 @@
-package at.nacs.rock_scissors_paper_game.model;
+package at.nacs.rockpaperscissors.model;
 
 public interface Move {
 
