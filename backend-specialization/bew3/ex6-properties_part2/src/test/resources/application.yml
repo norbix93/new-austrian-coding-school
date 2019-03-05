@@ -11,4 +11,12 @@ ballerina:
   performanceQuality3: 5
 week:
   days: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+bookstore:
+  book:
+    - title: Harry Potter
+      copies: 3
+    - title: The Foundation
+      copies: 2
+    - title: The Lord of the Rings
+      copies: 4
 

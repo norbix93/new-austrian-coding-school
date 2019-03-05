@@ -5,13 +5,13 @@ import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-import java.util.Map;
+import java.util.List;
 
 @Component
 @ConfigurationProperties("bookstore")
-public class Book {
+public class BookLoader {
 
     @Getter
     @Setter
-    Map<String, Integer> book;
+    private List<Book> book;
 }
