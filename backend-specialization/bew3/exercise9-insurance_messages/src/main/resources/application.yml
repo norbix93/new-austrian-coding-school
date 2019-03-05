@@ -1,0 +1,24 @@
+list:
+    customers:
+        - name: Ms. Sofia
+        - name: Mrs. Isabela
+        - name: Ms. Camila
+        - name: Mrs. Valentina
+        - name: Ms. Valeria
+        - name: Mrs. Mariana
+        - name: Mr. Santiago
+        - name: Mr. Sebastian
+        - name: Mr. Matias
+        - name: Mr. Mateo
+        - name: Mr. Alejandro
+        - name: Mr. Diego
+        - name: Daniela Threepwood
+        - name: Ms. Gabriela Threepwood
+        - name: Mrs. Martina Threepwood
+        - name: Mr. Samuel Threepwood
+        - name: Lucia
+        - name: Sara
+        - name: Emma
+        - name: Augustin
+        - name: Juan Pablo
+        - name: Rodrigo
