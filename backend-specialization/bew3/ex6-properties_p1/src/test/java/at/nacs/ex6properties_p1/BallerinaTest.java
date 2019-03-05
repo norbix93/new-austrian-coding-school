@@ -13,23 +13,24 @@ public class BallerinaTest {
 
     @Test
     public void getPerformanceQuality1() {
-        int actual = ballerina.getPerformanceQuality1();
-        Assertions.assertEquals(1, actual);
+        Integer actual = ballerina.getPerformanceQuality1();
+        Integer expected = 1;
+        Assertions.assertEquals(expected, actual);
 
     }
 
     @Test
     public void getPerformanceQuality2() {
-        int actual = ballerina.getPerformanceQuality2();
-        Assertions.assertEquals(3, actual);
-
-
+        Integer actual = ballerina.getPerformanceQuality2();
+        Integer expected = 3;
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
     public void getPerformanceQuality3() {
-        int actual = ballerina.getPerformanceQuality3();
-        Assertions.assertEquals(5, actual);
+        Integer actual = ballerina.getPerformanceQuality3();
+        Integer expected = 5;
+        Assertions.assertEquals(expected, actual);
 
     }
 }

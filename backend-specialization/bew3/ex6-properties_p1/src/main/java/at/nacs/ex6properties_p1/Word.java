@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Getter
 public class Word {
+
     @Value("${word.meaning}")
     private String meaning;
 }
