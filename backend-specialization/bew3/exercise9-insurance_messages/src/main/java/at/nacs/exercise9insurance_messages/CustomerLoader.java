@@ -13,5 +13,5 @@ import java.util.List;
 @Setter
 public class CustomerLoader {
 
-    private List<Customer> customers;
+    private List<Customer> customer;
 }

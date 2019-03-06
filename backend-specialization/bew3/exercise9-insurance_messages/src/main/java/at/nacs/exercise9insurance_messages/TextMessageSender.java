@@ -9,6 +9,16 @@ public class TextMessageSender {
     private final TemplateEngine engine;
 
     public void display() {
-        System.out.println(engine.createTemplate());
+        System.out.println("\n Man template \n");
+        engine.createManTemplate();
+
+        System.out.println("\n Woman template \n");
+        engine.createFemaleTemplate();
+
+        System.out.println("\n Privileged template \n");
+        engine.createPrivilegedTemplate();
+
+        System.out.println("\n Default template \n");
+        engine.createDefaultTemplate();
     }
 }
