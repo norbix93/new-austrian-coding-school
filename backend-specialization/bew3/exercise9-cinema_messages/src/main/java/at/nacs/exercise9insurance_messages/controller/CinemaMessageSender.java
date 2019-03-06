@@ -1,4 +1,4 @@
-package at.nacs.exercise9insurance_messages.view;
+package at.nacs.exercise9insurance_messages.controller;
 
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;

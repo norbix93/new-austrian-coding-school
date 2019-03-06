@@ -1,4 +1,4 @@
-package at.nacs.exercise9insurance_messages;
+package at.nacs.exercise9insurance_messages.model;
 
 import lombok.Data;
 

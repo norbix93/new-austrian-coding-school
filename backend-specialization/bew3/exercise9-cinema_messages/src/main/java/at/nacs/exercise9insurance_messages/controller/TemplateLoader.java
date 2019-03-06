@@ -1,5 +1,6 @@
-package at.nacs.exercise9insurance_messages;
+package at.nacs.exercise9insurance_messages.controller;
 
+import at.nacs.exercise9insurance_messages.model.Template;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
