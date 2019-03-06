@@ -1,5 +1,6 @@
-package at.nacs.exercise9insurance_messages.controller;
+package at.nacs.exercise9insurance_messages;
 
+import at.nacs.exercise9insurance_messages.controller.TextMessageSender;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,9 +9,9 @@ import org.springframework.context.annotation.Configuration;
 public class CinemaMessageSender {
 
     @Bean
-    ApplicationRunner applicationRunner(TextMessageSender textMessageSender ){
+    ApplicationRunner send(TextMessageSender sender){
         return args -> {
-            textMessageSender.display();
+            sender.display();
         };
     }
 }
