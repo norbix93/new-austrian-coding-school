@@ -3,22 +3,16 @@ package at.nacs.exercise9insurance_messages;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 @RequiredArgsConstructor
 public class TextMessageSender {
     private final TemplateEngine engine;
+    private final CustomerLoader customerLoader;
 
     public void display() {
-        System.out.println("\n Man template \n");
-        engine.createManTemplate();
-
-        System.out.println("\n Woman template \n");
-        engine.createFemaleTemplate();
-
-        System.out.println("\n Privileged template \n");
-        engine.createPrivilegedTemplate();
-
-        System.out.println("\n Default template \n");
-        engine.createDefaultTemplate();
+        List<Customer> customers = customerLoader.getCustomer();
+        engine.getMessage(customers);
     }
 }

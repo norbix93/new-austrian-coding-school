@@ -9,50 +9,24 @@ import java.util.List;
 @RequiredArgsConstructor
 public class TemplateEngine {
 
-    private final CustomerLoader customerLoader;
+    private final TemplateLoader templateLoader;
 
-    protected void createManTemplate() {
-        List<Customer> customers = customerLoader.getCustomer();
+    public void getMessage(List<Customer> customers) {
+        List<Template> templates = templateLoader.getTemplate();
         customers.stream()
-                .filter(customer -> customer.getName().startsWith("Mr."))
-                .forEach(maleCustomer ->
-                        System.out.println(
-                                "Good day " + maleCustomer.getName() +
-                                        ", don’t forget our 20% discount on tickets this Friday!"));
-    }
-
-    protected void createFemaleTemplate() {
-        List<Customer> customers = customerLoader.getCustomer();
-        customers.stream()
-                .filter(customer -> customer.getName().startsWith("Mrs.")
-                        || customer.getName().startsWith("Ms."))
-                .forEach(femaleCustomer ->
-                        System.out.println(
-                                "Dear " + femaleCustomer.getName() +
-                                        ", you and your friends will have so " +
-                                        "much fun at the cinema this Friday with a 20% discount!"));
-    }
-
-    protected void createPrivilegedTemplate() {
-        List<Customer> customers = customerLoader.getCustomer();
-        customers.stream()
-                .filter(customer -> customer.getName().contains("Threepwood"))
-                .forEach(privilegedCustomer ->
-                        System.out.println(
-                                "My dearest " + privilegedCustomer.getName() +
-                                        ", your lovely family gives you a 20% discount on tickets this Friday!"));
-    }
-
-    protected void createDefaultTemplate() {
-        List<Customer> customers = customerLoader.getCustomer();
-        customers.stream()
-                .filter(customer -> !customer.getName().contains("Threepwood")
-                        && !customer.getName().startsWith("Mr.")
-                        && !customer.getName().startsWith("Mrs.")
-                        && !customer.getName().startsWith("Ms."))
-                .forEach(customer ->
-                        System.out.println(
-                                "Hello " + customer.getName() +
-                                        "! How about a Friday night movie? This week with a 20% discount!"));
+                .forEach(customer -> {
+                    if (customer.getName().contains("Threepwood")) {
+                        System.out.println(templates.get(2).getGreeting() + " " +
+                                customer.getName() + ", " + templates.get(2).getText());
+                    } else if (customer.getName().startsWith("Ms.")
+                            || customer.getName().startsWith("Mrs.")) {
+                        System.out.println(templates.get(1).getGreeting() + " " +
+                                customer.getName() + ", " + templates.get(1).getText());
+                    } else if (customer.getName().startsWith("Mr.")) {
+                        System.out.println(templates.get(0).getGreeting() + " " +
+                                customer.getName() + ", " + templates.get(0).getText());
+                    } else System.out.println(templates.get(3).getGreeting() + " " +
+                            customer.getName() + ", " + templates.get(3).getText());
+                });
     }
 }

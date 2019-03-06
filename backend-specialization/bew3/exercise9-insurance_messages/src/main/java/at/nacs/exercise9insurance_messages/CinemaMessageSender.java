@@ -1,5 +1,6 @@
 package at.nacs.exercise9insurance_messages;
 
+import at.nacs.exercise9insurance_messages.TextMessageSender;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
