@@ -1,0 +1,13 @@
+list:
+  handshake:
+    - number: 2
+      meaning: thumb touches back
+    - number: 3
+      meaning: little finger grab
+    - number: 5
+      meaning: tickles over palm
+    - number: 6
+      meaning: bro knock
+    - number: 9
+      meaning: thousand knuckles
+
