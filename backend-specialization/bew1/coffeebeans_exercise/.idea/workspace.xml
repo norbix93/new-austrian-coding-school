@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92755a81-07d8-473f-b590-8e2513620d70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/test/java/at/nacs/exercise9insurance_messages/CustomerLoaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/test/java/at/nacs/exercise9insurance_messages/TemplateEngineTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/main/java/at/nacs/exercise9insurance_messages/controller/CinemaMessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/main/java/at/nacs/exercise9insurance_messages/CinemaMessageSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/main/java/at/nacs/exercise9insurance_messages/controller/CustomerLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/main/java/at/nacs/exercise9insurance_messages/CustomerLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/main/java/at/nacs/exercise9insurance_messages/controller/Exercise9InsuranceMessagesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/main/java/at/nacs/exercise9insurance_messages/Exercise9InsuranceMessagesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/main/java/at/nacs/exercise9insurance_messages/controller/TemplateEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/main/java/at/nacs/exercise9insurance_messages/TemplateEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/main/java/at/nacs/exercise9insurance_messages/controller/TemplateLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/main/java/at/nacs/exercise9insurance_messages/TemplateLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/main/java/at/nacs/exercise9insurance_messages/controller/TextMessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/main/java/at/nacs/exercise9insurance_messages/TextMessageSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/main/java/at/nacs/exercise9insurance_messages/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/main/java/at/nacs/exercise9insurance_messages/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/main/java/at/nacs/exercise9insurance_messages/model/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/main/java/at/nacs/exercise9insurance_messages/Template.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages/src/main/java/at/nacs/exercise9insurance_messages/view/file.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,49 +24,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/controller/BeanApplication.java">
+        <entry file="file://$PROJECT_DIR$/src/model/Experiment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-              <folding>
-                <element signature="e#117#118#0" expanded="true" />
-                <element signature="e#149#150#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/Bean/Generator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/Screen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/Statistician.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="270">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,6 +69,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -135,8 +112,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -146,8 +121,8 @@
     <property name="Repository.Attach.Sources" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551121580535" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bew2/ex1-helloworld" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551882924998" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bew3/exercise9-cinema_messages" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -209,16 +184,17 @@
       <workItem from="1550916163796" duration="794000" />
       <workItem from="1550917234092" duration="52000" />
       <workItem from="1551121564599" duration="28000" />
+      <workItem from="1551882823711" duration="170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="874000" />
+    <option name="totallyTimeSpent" value="1044000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25778133" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2621212" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -228,7 +204,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3491311" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -256,26 +232,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/model/Bean.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Scientist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/OverallExperiment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/Bean/Counter.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -307,31 +263,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Experiment.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/Bean/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="144">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/BeanApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/Scientist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state relative-caret-position="265">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
           <folding>
-            <element signature="e#117#118#0" expanded="true" />
-            <element signature="e#149#150#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Bean/Generator.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/OverallExperiment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        <state relative-caret-position="144">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -340,18 +295,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/Screen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="236">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/BeanApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="e#117#118#0" expanded="true" />
+            <element signature="e#149#150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/Statistician.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="-460">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Experiment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
