@@ -1,0 +1,78 @@
+server:
+  port: 9001
+
+list:
+  morsecode:
+    - symbol: a
+      code: ._
+    - symbol: b
+      code: _...
+    - symbol: c
+      code: _._.
+    - symbol: d
+      code: _..
+    - symbol: e
+      code: .
+    - symbol: f
+      code: .._.
+    - symbol: g
+      code: __.
+    - symbol: h
+      code: ....
+    - symbol: i
+      code: ..
+    - symbol: j
+      code: .____
+    - symbol: k
+      code: _._
+    - symbol: l
+      code: ._..
+    - symbol: m
+      code: __
+    - symbol: n
+      code: _.
+    - symbol: o
+      code: ___
+    - symbol: p
+      code: .__.
+    - symbol: q
+      code: __._
+    - symbol: r
+      code: ._.
+    - symbol: s
+      code: ...
+    - symbol: t
+      code: _
+    - symbol: u
+      code: .._
+    - symbol: v
+      code: ..._
+    - symbol: w
+      code: .__
+    - symbol: x
+      code: _.._
+    - symbol: y
+      code: _.__
+    - symbol: z
+      code: __..
+    - symbol: 0
+      code: _____
+    - symbol: 1
+      code: .____
+    - symbol: 2
+      code: ..___
+    - symbol: 3
+      code: ...__
+    - symbol: 4
+      code: ....._
+    - symbol: 5
+      code: .....
+    - symbol: 6
+      code: _....
+    - symbol: 7
+      code: __...
+    - symbol: 8
+      code: ___..
+    - symbol: 9
+      code: ____.
+  
