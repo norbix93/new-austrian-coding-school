@@ -15,7 +15,7 @@ public class EncoderEndpoint {
 
     @GetMapping
     List<String> uploadLetter() {
-        String message = "martin molnar";
+        String message = "rozalia molnar";
         return Stream.of(message.split(""))
                 .collect(Collectors.toList());
     }

@@ -29,6 +29,4 @@ public class RunnersConfiguration {
     String winner() {
         return winner;
     }
-
-
 }

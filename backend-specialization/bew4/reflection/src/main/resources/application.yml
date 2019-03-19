@@ -1,8 +1,5 @@
-server:
-  port: 9001
-
-list:
-  entry:
+dictionary:
+  morsecode:
     - symbol: a
       code: ._
     - symbol: b
