@@ -1,11 +1,8 @@
 package at.nacs.reflection.controller;
 
-import at.nacs.reflection.model.Handshake;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -19,7 +16,6 @@ public class HandshakeConverter {
 
     public List<String> convert(Integer input) {
         Map<Integer, String> handshakes = loader.createMapOfHandshakes();
-
         return Stream.of(String.valueOf(input).split(""))
                 .map(Integer::valueOf)
                 .filter(handshakes::containsKey)
