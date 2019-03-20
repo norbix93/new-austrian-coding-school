@@ -16,9 +16,9 @@ public class MorseEncoder {
     public String translate(String message) {
         Map<String, String> entries = dictionary.createMap();
         return Stream.of(message.split(""))
-                .filter(e->!e.equals(" "))
+                .filter(e -> !e.equals(" "))
                 .filter(entries::containsKey)
-                .map(e->e.toLowerCase())
+                .map(e -> e.toLowerCase())
                 .map(entries::get)
                 .collect(Collectors.joining());
     }

@@ -11,7 +11,7 @@ import java.util.UUID;
 public class Admission {
     private final DiagnosisClient client;
 
-    public Patient generateID(Patient newPatient) {
+    public Patient admit(Patient newPatient) {
         String ID = UUID.randomUUID().toString();
         newPatient.setId(ID);
         return client.send(newPatient);

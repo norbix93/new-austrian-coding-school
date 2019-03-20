@@ -12,7 +12,7 @@ public class PatientsEndpoint {
 
     @PostMapping
     public Patient generateID(@RequestBody Patient patient) {
-        admission.generateID(patient);
+        admission.admit(patient);
         return patient;
     }
 }
