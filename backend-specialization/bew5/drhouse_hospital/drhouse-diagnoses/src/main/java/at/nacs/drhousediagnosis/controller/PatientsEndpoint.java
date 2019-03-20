@@ -1,6 +1,6 @@
-package at.nacs.drhousediagnoses.controller;
+package at.nacs.drhousediagnosis.controller;
 
-import at.nacs.drhousediagnoses.model.Patient;
+import at.nacs.drhousediagnosis.model.Patient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

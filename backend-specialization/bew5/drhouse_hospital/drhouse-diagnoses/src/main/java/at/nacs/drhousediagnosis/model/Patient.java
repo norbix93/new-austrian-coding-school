@@ -1,4 +1,4 @@
-package at.nacs.drhousediagnoses.model;
+package at.nacs.drhousediagnosis.model;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package at.nacs.drhousediagnoses;
+package at.nacs.drhousediagnosis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

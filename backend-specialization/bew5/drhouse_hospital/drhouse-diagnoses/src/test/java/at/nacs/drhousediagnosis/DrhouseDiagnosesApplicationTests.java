@@ -1,4 +1,4 @@
-package at.nacs.drhousediagnoses;
+package at.nacs.drhousediagnosis;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
