@@ -11,7 +11,7 @@ public class PatientsEndpoint {
     private final Admission admission;
 
     @PostMapping
-    public Patient generateID(@RequestBody Patient patient) {
+    public Patient send(@RequestBody Patient patient) {
         admission.admit(patient);
         return patient;
     }
