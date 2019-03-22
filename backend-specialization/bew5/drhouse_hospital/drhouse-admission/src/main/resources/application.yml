@@ -4,3 +4,4 @@ server:
 diagnosis:
     port: http://localhost:9002/patients
 
+

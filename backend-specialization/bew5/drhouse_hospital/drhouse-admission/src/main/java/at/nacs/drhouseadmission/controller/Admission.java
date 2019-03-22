@@ -1,5 +1,6 @@
 package at.nacs.drhouseadmission.controller;
 
+import at.nacs.drhouseadmission.communication.DiagnosisClient;
 import at.nacs.drhouseadmission.model.Patient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

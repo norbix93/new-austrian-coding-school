@@ -1,5 +1,6 @@
-package at.nacs.drhouseadmission.controller;
+package at.nacs.drhouseadmission.communication;
 
+import at.nacs.drhouseadmission.controller.Admission;
 import at.nacs.drhouseadmission.model.Patient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

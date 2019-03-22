@@ -4,11 +4,21 @@ import at.nacs.drhousediagnosis.model.Patient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.Map;
+
 @Service
 @RequiredArgsConstructor
 public class DrHouse {
 
-    public void createDiagnosis(Patient patient) {
-        patient.setDiagnosis("lupus");
+    private final Database database;
+
+    public String createDiagnosis(Patient patient) {
+        Map<String, String> diseases = database.loadContent();
+        String symptoms = patient.getSymptoms();
+        return diseases.entrySet().stream()
+                .filter(symptom -> symptom.getKey().equalsIgnoreCase(symptoms))
+                .map(symptom -> symptom.getValue())
+                .findFirst()
+                .orElse("Lupus");
     }
 }

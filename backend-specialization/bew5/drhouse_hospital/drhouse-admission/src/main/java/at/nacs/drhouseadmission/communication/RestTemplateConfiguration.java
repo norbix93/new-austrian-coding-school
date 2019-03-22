@@ -1,4 +1,4 @@
-package at.nacs.drhousediagnosis.controller;
+package at.nacs.drhouseadmission.communication;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
