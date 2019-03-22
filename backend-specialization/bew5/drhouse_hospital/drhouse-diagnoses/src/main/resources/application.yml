@@ -2,11 +2,11 @@ server:
   port: 9002
 
 database:
-  disease:
+  diseases:
     - symptoms: Spots
       condition: Chickenpox
     - symptoms: Fever
-      condition: Hand, foot and mouth disease
+      condition: Hand, foot and mouth diseases
     - symptoms: Scalp
       condition: Head lice (Nits)
     - symptoms: Rash

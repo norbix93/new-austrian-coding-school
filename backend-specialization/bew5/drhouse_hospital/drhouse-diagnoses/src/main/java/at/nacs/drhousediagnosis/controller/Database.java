@@ -16,10 +16,10 @@ import java.util.stream.Collectors;
 @Setter
 public class Database {
 
-    private List<Disease> disease;
+    private List<Disease> diseases;
 
     public Map<String, String> loadContent() {
-        return disease.stream()
+        return diseases.stream()
                 .collect(Collectors.toMap(Disease::getSymptoms, Disease::getCondition));
     }
 }
