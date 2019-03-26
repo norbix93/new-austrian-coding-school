@@ -1,0 +1,18 @@
+spring:
+  data:
+    mongodb:
+    uri: mongodb://localhost/todos
+
+server:
+  port: 9000
+
+dataset:
+  todos:
+    - title: Learn MongoDB
+      done: false
+    - title: Learn SQL
+      done: false
+    - title: Learn NoSQL
+      done: false
+    - title: Take a break
+      done: false
