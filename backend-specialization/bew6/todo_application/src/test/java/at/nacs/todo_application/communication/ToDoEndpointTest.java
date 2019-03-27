@@ -28,11 +28,9 @@ class ToDoEndpointTest {
     @MockBean
     ToDoRepository repository;
 
-
     @SpyBean
     ToDoManager manager;
-
-
+    
     @Test
     void findAll() {
         String url = "/todos";
