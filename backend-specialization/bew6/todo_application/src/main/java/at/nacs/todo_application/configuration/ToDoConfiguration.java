@@ -15,8 +15,16 @@ public class ToDoConfiguration {
     @Setter
     private List<ToDo> todos;
 
+    @Setter
+    private ToDo toDo;
+
     @Bean
     List<ToDo> todos() {
         return todos;
+    }
+
+    @Bean
+    ToDo toDo() {
+        return toDo;
     }
 }

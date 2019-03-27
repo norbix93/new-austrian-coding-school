@@ -14,9 +14,9 @@ public class ToDoManager {
 
     private final ToDoRepository repository;
 
-    public ToDo findByID(String ID) {
-        Optional<ToDo> oneByid = repository.findOneByID(ID);
-        return oneByid.orElse(null);
+    public ToDo findByiD(String iD) {
+        Optional<ToDo> oneByiD = repository.findOneByiD(iD);
+        return oneByiD.orElse(null);
     }
 
     public List<ToDo> findAll() {
@@ -24,16 +24,17 @@ public class ToDoManager {
         return todos;
     }
 
-    public void doTask(String id) {
-        ToDo itemToChange = findByID(id);
+    public ToDo doTask(String iD) {
+        ToDo itemToChange = findByiD(iD);
         itemToChange.setDone(true);
+        return itemToChange;
     }
 
     public ToDo save(ToDo itemToSave) {
-        return repository.save();
+        return repository.save(itemToSave);
     }
 
-    public void deleteItemByid(ToDo item) {
-        repository.deleteByID(item);
+    public void deleteItemByiD(String iD) {
+        repository.deleteToDoByiD(iD);
     }
 }

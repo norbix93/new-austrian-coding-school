@@ -1,6 +1,5 @@
 package at.nacs.todo_application.communication;
 
-import at.nacs.todo_application.ToDoRepository;
 import at.nacs.todo_application.controller.ToDoManager;
 import at.nacs.todo_application.model.ToDo;
 import lombok.RequiredArgsConstructor;
@@ -15,9 +14,9 @@ public class ToDoEndpoint {
 
     private final ToDoManager manager;
 
-    @GetMapping("/{ID}")
-    ToDo findByID(@PathVariable String id) {
-        return manager.findByID(id);
+    @GetMapping("/iD/{iD}")
+    ToDo findByID(@PathVariable String iD) {
+        return manager.findByiD(iD);
     }
 
     @GetMapping
@@ -25,10 +24,10 @@ public class ToDoEndpoint {
         return manager.findAll();
     }
 
-    @PutMapping("/{ID}/done")
-    ToDo doTask(@PathVariable String id) {
-        ToDo itemToChange = findByID(id);
-        manager.doTask(id);
+    @PutMapping("/iD/{iD}/done")
+    ToDo doTask(@PathVariable String iD) {
+        ToDo itemToChange = findByID(iD);
+        manager.doTask(iD);
         return manager.save(itemToChange);
     }
 
@@ -37,10 +36,10 @@ public class ToDoEndpoint {
         return manager.save(todo);
     }
 
-    @DeleteMapping("/{ID}")
-    void delete(@PathVariable String ID) {
-        ToDo itemToDelete = findByID(ID);
-        manager.deleteItemByid(itemToDelete);
+    @DeleteMapping("/iD/{iD}")
+    void delete(@PathVariable String iD) {
+        ToDo itemToDelete = findByID(iD);
+        manager.deleteItemByiD(itemToDelete.getID());
 
     }
 }

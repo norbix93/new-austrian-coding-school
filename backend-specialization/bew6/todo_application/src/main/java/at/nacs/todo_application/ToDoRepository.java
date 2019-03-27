@@ -8,12 +8,12 @@ import java.util.Optional;
 
 public interface ToDoRepository extends MongoRepository<ToDo, String> {
 
-    Optional<ToDo> findOneByID(String ID);
+    Optional<ToDo> findOneByiD(String ID);
 
-    Optional<ToDo> deleteByID(ToDo item);
+    Optional<ToDo> deleteToDoByiD(String ID);
 
     List<ToDo> findAll();
 
-    ToDo save();
+    ToDo save(ToDo itemToSave);
 
 }

@@ -1,46 +1,72 @@
 package at.nacs.todo_application.communication;
 
-import at.nacs.todo_application.ToDoRunner;
+import at.nacs.todo_application.ToDoRepository;
+import at.nacs.todo_application.controller.ToDoManager;
 import at.nacs.todo_application.model.ToDo;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.boot.test.mock.mockito.SpyBean;
+import org.springframework.boot.test.web.client.TestRestTemplate;
 
-import static org.assertj.core.api.Java6Assertions.assertThat;
+import java.util.List;
+
+import static org.mockito.Mockito.anyString;
+import static org.mockito.Mockito.verify;
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 
 @SpringBootTest(webEnvironment = RANDOM_PORT)
 class ToDoEndpointTest {
 
     @Autowired
-    ToDoEndpoint toDoEndpoint;
+    TestRestTemplate restTemplate;
+
+    @Autowired
+    List<ToDo> todos;
+
+    @MockBean
+    ToDoRepository repository;
+
 
     @SpyBean
-    ToDoRunner manager;
+    ToDoManager manager;
 
-
-    @Test
-    void findByID() {
-        ToDo actual = toDoEndpoint.findByID("5c99fecc280d542e5e143e6a");
-        String expected = "5c99fecc280d542e5e143e6a";
-        assertThat(actual.getID()).isEqualTo(expected);
-        assertThat(actual.getID()).isNotNull();
-    }
 
     @Test
     void findAll() {
+        String url = "/todos";
+        restTemplate.getForObject(url, ToDo[].class);
+        verify(manager).findAll();
     }
 
     @Test
-    void getItDone() {
+    void findByID() {
+        String url = "/todos/iD/123";
+        restTemplate.getForObject(url, ToDo.class);
+        verify(manager).findByiD("123");
+    }
+
+    @Test
+    void doTask() {
+        ToDo example = todos.get(0);
+        String url = "/todos/iD/123/done";
+        restTemplate.put(url, example);
+        verify(manager).doTask(anyString());
     }
 
     @Test
     void receiveNew() {
+        String url = "/todos";
+        ToDo example = ToDo.builder().build();
+        restTemplate.postForObject(url, example, ToDo.class);
+        verify(manager).save(example);
     }
 
-    @Test
-    void delete() {
-    }
+//    @Test
+//    void delete() {
+//        String url = "/todos/iD/123";
+//        restTemplate.delete(url,ToDo.class);
+//        verify(manager).deleteItemByiD(anyString());
+//    }
 }
