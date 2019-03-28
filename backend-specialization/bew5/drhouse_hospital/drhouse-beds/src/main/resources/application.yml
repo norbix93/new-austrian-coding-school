@@ -6,6 +6,9 @@ spring:
 server:
   port: 9003
 
+accountancy:
+  port: http://localhost:9005/patients
+
 dataset:
   diseases:
     - condition: Headache
