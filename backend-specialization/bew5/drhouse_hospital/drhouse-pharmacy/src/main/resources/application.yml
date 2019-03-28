@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost/pharmacy
+
+server:
+  port: 9004
+
+dataset:
+  diseases:
+    - condition: Headache
+      treatment: Buy these pills at the pharmacy, please.
+    - condition: Stomachache
+      treatment: Buy these pills at the pharmacy, please.
+    - condition: Chickenpox
+      treatment: Buy this cream at the pharmacy, please.

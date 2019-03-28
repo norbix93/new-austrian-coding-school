@@ -9,10 +9,8 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class BedsManager {
     private final BedsRepository repository;
-    private final Nurse nurse;
 
-    Patient save(Patient patient) {
-        nurse.provideTreatment(patient);
+    public Patient save(Patient patient) {
         return repository.save(patient);
     }
 }

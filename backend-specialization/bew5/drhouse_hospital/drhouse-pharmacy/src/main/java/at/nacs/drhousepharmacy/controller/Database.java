@@ -1,7 +1,7 @@
-package at.nacs.drhousebeds.controller;
+package at.nacs.drhousepharmacy.controller;
 
-import at.nacs.drhousebeds.configuration.BedsConfiguration;
-import at.nacs.drhousebeds.persistence.Disease;
+import at.nacs.drhousepharmacy.configuration.PharmacyConfiguration;
+import at.nacs.drhousepharmacy.persistence.Disease;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 @Setter
 @RequiredArgsConstructor
 public class Database {
-    private final BedsConfiguration configuration;
+    private final PharmacyConfiguration configuration;
 
     public Map<String, String> loadContent() {
         return configuration.getDiseases().stream()
