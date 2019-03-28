@@ -36,9 +36,9 @@ class ToDoManagerTest {
     void findByID() {
 
         ToDo example = todos.get(0);
-        ToDo actual = manager.findByiD(example.getID());
+        ToDo actual = manager.findById(example.getId());
         assertThat(actual).isEqualTo(example);
-        assertThat(actual.getID()).isNotBlank();
+        assertThat(actual.getId()).isNotBlank();
     }
 
     @Test
@@ -50,24 +50,24 @@ class ToDoManagerTest {
     @Test
     void doTask() {
         ToDo example = todos.get(0);
-        ToDo actual = manager.doTask(example.getID());
+        ToDo actual = manager.doTask(example.getId());
         assertThat(actual.getDone()).isEqualTo(true);
     }
 
     @Test
     void save() {
-        ToDo example = ToDo.builder().iD("987").title("Go to a restaurant")
+        ToDo example = ToDo.builder().id("987").title("Go to a restaurant")
                 .done(false).build();
         manager.save(example);
-        assertThat(repository.findOneByiD("987")).isNotEmpty();
+        assertThat(repository.findById("987")).isNotEmpty();
     }
 
     @Test
     void deleteItemByID() {
-        ToDo example = ToDo.builder().iD("987").title("Go to a restaurant")
+        ToDo example = ToDo.builder().id("987").title("Go to a restaurant")
                 .done(false).build();
         manager.save(example);
-        manager.deleteItemByiD(example.getID());
+        manager.deleteItemById(example.getId());
         assertThat(manager.findAll()).doesNotContain(example);
         assertThat(manager.findAll().size()).isEqualTo(4);
     }

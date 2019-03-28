@@ -14,32 +14,32 @@ public class ToDoEndpoint {
 
     private final ToDoManager manager;
 
-    @GetMapping("/iD/{iD}")
-    ToDo findByID(@PathVariable String iD) {
-        return manager.findByiD(iD);
+    @GetMapping("/{id}")
+    ToDo get(@PathVariable String id) {
+        return manager.findById(id);
     }
 
     @GetMapping
-    List<ToDo> findAll() {
+    List<ToDo> get() {
         return manager.findAll();
     }
 
-    @PutMapping("/iD/{iD}/done")
-    ToDo doTask(@PathVariable String iD) {
-        ToDo itemToChange = findByID(iD);
-        manager.doTask(iD);
+    @PutMapping("/{id}/done")
+    ToDo put(@PathVariable String id) {
+        ToDo itemToChange = get(id);
+        manager.doTask(id);
         return manager.save(itemToChange);
     }
 
     @PostMapping
-    ToDo receiveNew(@RequestBody ToDo todo) {
+    ToDo post(@RequestBody ToDo todo) {
         return manager.save(todo);
     }
 
-    @DeleteMapping("/iD/{iD}")
-    void delete(@PathVariable String iD) {
-        ToDo itemToDelete = findByID(iD);
-        manager.deleteItemByiD(itemToDelete.getID());
+    @DeleteMapping("/{id}")
+    void delete(@PathVariable String id) {
+        ToDo itemToDelete = get(id);
+        manager.deleteItemById(itemToDelete.getId());
 
     }
 }

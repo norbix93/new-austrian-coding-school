@@ -30,7 +30,7 @@ class ToDoEndpointTest {
 
     @SpyBean
     ToDoManager manager;
-    
+
     @Test
     void findAll() {
         String url = "/todos";
@@ -42,7 +42,7 @@ class ToDoEndpointTest {
     void findByID() {
         String url = "/todos/iD/123";
         restTemplate.getForObject(url, ToDo.class);
-        verify(manager).findByiD("123");
+        verify(manager).findById("123");
     }
 
     @Test
@@ -65,6 +65,6 @@ class ToDoEndpointTest {
 //    void delete() {
 //        String url = "/todos/iD/123";
 //        restTemplate.delete(url,ToDo.class);
-//        verify(manager).deleteItemByiD(anyString());
+//        verify(manager).deleteItemById(anyString());
 //    }
 }

@@ -14,8 +14,8 @@ public class ToDoRunner {
     ApplicationRunner applicationRunner(List<ToDo> todos, ToDoRepository repository) {
         return args -> {
 
-            System.out.println("---SAVE---");
-            repository.saveAll(todos);
+//            System.out.println("---SAVE---");
+//            repository.saveAll(todos);
             System.out.println("---FIND---");
             List<ToDo> all = repository.findAll();
             all.forEach(System.out::println);
