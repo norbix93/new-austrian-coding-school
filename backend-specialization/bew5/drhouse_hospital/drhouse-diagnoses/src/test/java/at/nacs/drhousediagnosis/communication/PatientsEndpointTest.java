@@ -25,6 +25,6 @@ class PatientsEndpointTest {
         Patient actual = patientsEndpoint.forward(patient);
         assertThat(actual).isNotNull();
         assertThat(actual.getId()).isNull();
-        assertThat(actual.getDiagnosis()).isNull();
+        assertThat(actual.getDiagnosis()).isNotNull();
     }
 }

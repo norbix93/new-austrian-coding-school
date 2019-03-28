@@ -17,15 +17,15 @@ class DrHouseTest {
     @Test
     void createDiagnosisOne() {
         Patient patient = Patient.builder().symptoms("spots").build();
-        String actual = drHouse.createDiagnosis(patient);
+        Patient actual = drHouse.createDiagnosis(patient);
         String expected = "Chickenpox";
-        assertThat(actual).isEqualTo(expected);
+        assertThat(actual.getDiagnosis()).isEqualTo(expected);
     }
     @Test
     void createDiagnosisTwo(){
         Patient patient = Patient.builder().symptoms("virus").build();
-        String actual = drHouse.createDiagnosis(patient);
+        Patient actual = drHouse.createDiagnosis(patient);
         String expected = "Lupus";
-        assertThat(actual).isEqualTo(expected);
+        assertThat(actual.getDiagnosis()).isEqualTo(expected);
     }
 }
