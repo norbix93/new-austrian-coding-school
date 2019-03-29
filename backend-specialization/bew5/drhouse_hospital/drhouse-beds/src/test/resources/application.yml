@@ -1,14 +1,3 @@
-spring:
-  data:
-    mongodb:
-      uri: mongodb://localhost/beds
-
-server:
-  port: 9003
-
-accountancy:
-  port: http://localhost:9005/patients
-
 dataset:
   diseases:
     - condition: Headache
@@ -18,3 +7,9 @@ dataset:
     - condition: Chickenpox
       treatment: Wait for the doctor to get the cream prescribed, please.
 
+list:
+  patient:
+    - name: Norbert
+      symptoms: Headache
+      diagnosis: Headache
+      treatment: Has to take some pills.
