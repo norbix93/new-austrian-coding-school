@@ -12,5 +12,4 @@ public class DrhousePharmacyApplicationTests {
     @Test
     public void contextLoads() {
     }
-
 }

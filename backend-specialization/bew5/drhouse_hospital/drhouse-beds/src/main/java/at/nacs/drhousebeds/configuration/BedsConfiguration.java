@@ -12,6 +12,7 @@ import java.util.List;
 @Configuration
 @ConfigurationProperties("dataset")
 public class BedsConfiguration {
+
     @Setter
     @Getter
     List<Disease> diseases;

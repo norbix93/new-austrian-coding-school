@@ -1,8 +1,14 @@
 package at.nacs.drhousepharmacy.persistence;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class Patient {
 
     private String id;

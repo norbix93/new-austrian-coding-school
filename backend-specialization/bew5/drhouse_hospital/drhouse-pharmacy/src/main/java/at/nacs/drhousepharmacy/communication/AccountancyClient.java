@@ -11,7 +11,6 @@ import org.springframework.web.client.RestTemplate;
 public class AccountancyClient {
     private final RestTemplate restTemplate;
 
-
     @Value("${accountancy.port}")
     private String accountancyUrl;
 

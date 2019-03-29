@@ -7,9 +7,3 @@ dataset:
     - condition: Chickenpox
       treatment: Wait for the doctor to get the cream prescribed, please.
 
-list:
-  patient:
-    - name: Norbert
-      symptoms: Headache
-      diagnosis: Headache
-      treatment: Has to take some pills.

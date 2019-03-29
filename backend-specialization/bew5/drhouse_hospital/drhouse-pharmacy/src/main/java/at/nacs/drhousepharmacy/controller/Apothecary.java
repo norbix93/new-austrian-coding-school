@@ -11,7 +11,6 @@ import java.util.Map;
 public class Apothecary {
 
     private final Database database;
-    private final PharmacyManager manager;
 
     public Patient provideMedicament(Patient patient) {
         Map<String, String> diseases = database.loadContent();
@@ -23,6 +22,6 @@ public class Apothecary {
                 .orElse("Sorry, the medicine is not in our database. " +
                         "You have to see Dr. House again.");
         patient.setMedicine(medicine);
-        return manager.save(patient);
+        return patient;
     }
 }
