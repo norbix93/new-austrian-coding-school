@@ -15,13 +15,12 @@ import java.util.Random;
 public class Manager {
 
     @Setter
-//    @Getter
     private List<Message> messages;
 
     public Message display() {
         Random random = new Random();
         int size = messages.size();
-        int next = random.nextInt(size);
-        return messages.get(next);
+        int randomValue = random.nextInt(size);
+        return messages.get(randomValue);
     }
 }
