@@ -1,7 +1,7 @@
-package at.nacs.drhouseaccountant.communication;
+package at.nacs.drhouse_accountancy.communication;
 
-import at.nacs.drhouseaccountant.logic.Accountant;
-import at.nacs.drhouseaccountant.persistence.Invoice;
+import at.nacs.drhouse_accountancy.logic.Accountant;
+import at.nacs.drhouse_accountancy.persistence.invoice.Invoice;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +19,7 @@ public class InvoicesEndpoint {
         return accountant.findAll();
     }
 
-    @PutMapping("/{id}/paid")
+    @PutMapping("{id}/paid")
     void put(@PathVariable String id) {
         accountant.pay(id);
     }
