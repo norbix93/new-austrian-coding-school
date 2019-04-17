@@ -1,0 +1,10 @@
+/home/norbert/IdeaProjects(NACS)/backend-specialization/bew7/drhouse-accountancy/src/main/java/at/nacs/drhouse_accountancy/persistence/PatientRepository.java
+/home/norbert/IdeaProjects(NACS)/backend-specialization/bew7/drhouse-accountancy/src/main/java/at/nacs/drhouse_accountancy/logic/Accountant.java
+/home/norbert/IdeaProjects(NACS)/backend-specialization/bew7/drhouse-accountancy/src/main/java/at/nacs/drhouse_accountancy/persistence/Invoice.java
+/home/norbert/IdeaProjects(NACS)/backend-specialization/bew7/drhouse-accountancy/src/main/java/at/nacs/drhouse_accountancy/persistence/Kind.java
+/home/norbert/IdeaProjects(NACS)/backend-specialization/bew7/drhouse-accountancy/src/main/java/at/nacs/drhouse_accountancy/dto/PatientDTO.java
+/home/norbert/IdeaProjects(NACS)/backend-specialization/bew7/drhouse-accountancy/src/main/java/at/nacs/drhouse_accountancy/communication/InvoicesEndpoint.java
+/home/norbert/IdeaProjects(NACS)/backend-specialization/bew7/drhouse-accountancy/src/main/java/at/nacs/drhouse_accountancy/persistence/Patient.java
+/home/norbert/IdeaProjects(NACS)/backend-specialization/bew7/drhouse-accountancy/src/main/java/at/nacs/drhouse_accountancy/DrhouseAccountancyApplication.java
+/home/norbert/IdeaProjects(NACS)/backend-specialization/bew7/drhouse-accountancy/src/main/java/at/nacs/drhouse_accountancy/persistence/InvoiceRepository.java
+/home/norbert/IdeaProjects(NACS)/backend-specialization/bew7/drhouse-accountancy/src/main/java/at/nacs/drhouse_accountancy/communication/PatientsEndpoint.java
