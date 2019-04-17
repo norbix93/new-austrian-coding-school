@@ -18,9 +18,8 @@ public class Manager {
     private List<Message> messages;
 
     public Message display() {
-        Random random = new Random();
         int size = messages.size();
-        int randomValue = random.nextInt(size);
-        return messages.get(randomValue);
+        int nextRandom = new Random().nextInt(size);
+        return messages.get(nextRandom);
     }
 }
