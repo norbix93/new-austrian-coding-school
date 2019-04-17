@@ -1,6 +1,6 @@
 package at.nacs.drhouse_accountancy.communication;
 
-import at.nacs.drhouse_accountancy.logic.Accountant;
+import at.nacs.drhouse_accountancy.logic.InvoiceManager;
 import at.nacs.drhouse_accountancy.persistence.invoice.Invoice;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -12,15 +12,15 @@ import java.util.List;
 @RequestMapping("/invoices")
 public class InvoicesEndpoint {
 
-    private final Accountant accountant;
+    private final InvoiceManager invoiceManager;
 
     @GetMapping
-    List<Invoice> findAllInvoices() {
-        return accountant.findAll();
+    List<Invoice> findAll() {
+        return invoiceManager.findAllInvoices();
     }
 
     @PutMapping("{id}/paid")
     void put(@PathVariable String id) {
-        accountant.pay(id);
+        invoiceManager.pay(id);
     }
 }

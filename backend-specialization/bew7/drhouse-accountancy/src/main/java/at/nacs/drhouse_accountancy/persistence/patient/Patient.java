@@ -12,15 +12,16 @@ import javax.persistence.Id;
 
 @Data
 @Entity
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 public class Patient {
 
     @Id
     @GeneratedValue
     private Long id;
 
+    @Column(unique = true)
     private String uuid;
 
     @Column(unique = true)
