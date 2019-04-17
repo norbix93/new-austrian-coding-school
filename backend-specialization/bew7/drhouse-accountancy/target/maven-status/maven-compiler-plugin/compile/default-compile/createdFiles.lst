@@ -1,0 +1,12 @@
+at/nacs/drhouse_accountancy/persistence/Patient.class
+at/nacs/drhouse_accountancy/persistence/PatientRepository.class
+at/nacs/drhouse_accountancy/persistence/Invoice$InvoiceBuilder.class
+at/nacs/drhouse_accountancy/logic/Accountant$1.class
+at/nacs/drhouse_accountancy/persistence/InvoiceRepository.class
+at/nacs/drhouse_accountancy/communication/PatientsEndpoint.class
+at/nacs/drhouse_accountancy/persistence/Invoice.class
+at/nacs/drhouse_accountancy/communication/InvoicesEndpoint.class
+at/nacs/drhouse_accountancy/dto/PatientDTO.class
+at/nacs/drhouse_accountancy/logic/Accountant.class
+at/nacs/drhouse_accountancy/persistence/Kind.class
+at/nacs/drhouse_accountancy/DrhouseAccountancyApplication.class
