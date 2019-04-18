@@ -1,4 +1,4 @@
-package at.nacs.todoui.communication;
+package at.nacs.drhousehospitalui.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Invoices</title>
+    <meta charset="UTF-8">
+    <link media="all" rel="stylesheet" th:href="@{/css/style.css}" type="text/css"/>
+</head>
+<body>
+
+<h2>Invoices</h2>
+<span>These invoices are currently registered in our database:</span>
+<table>
+    <tr>
+        <th>List of Invoices:</th>
+        <th>Paid:</th>
+    </tr>
+    <tr th:each="invoice : ${invoices}">
+        <td th:text="${invoice.id}">Title</td>
+        <td>
+            <span th:if="${invoice.paid == true}">Successful payment!</span>
+            <form th:if="${invoice.paid == false}" method="post" th:action="@{/invoices/paid}">
+                <input name="id" th:value="${invoice.id}" type="hidden"/>
+                <button type="submit"> Pay</button>
+            </form>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
