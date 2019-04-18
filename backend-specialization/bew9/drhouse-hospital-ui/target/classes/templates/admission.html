@@ -7,16 +7,16 @@
 </head>
 <body>
 <div class="container">
-<h2>Admission</h2>
-<span>Please fill out the following form to register at our hospital:</span>
-<form method="post" th:action="@{/}" th:object="${patient}">
-    <label>Name: </label>
-    <input th:field="*{name}" type="text"/>
-    <p th:if="${#fields.hasErrors('name')}">Incorrect input</p>
-    <label>Symptoms: </label>
-    <input th:field="*{symptoms}" type="text"/>
-    <button type="submit">Submit</button>
-</form>
+    <h2>Admission</h2>
+    <span>Please fill out the following form to register at our hospital:</span>
+    <form method="post" th:action="@{/}" th:object="${patient}">
+        <label>Name: </label>
+        <input th:field="*{name}" type="text"/>
+        <p th:if="${#fields.hasErrors('name')}">Field cannot be left empty!</p>
+        <label>Symptoms: </label>
+        <input th:field="*{symptoms}" type="text"/>
+        <button type="submit">Submit</button>
+    </form>
 </div>
 </body>
 </html>

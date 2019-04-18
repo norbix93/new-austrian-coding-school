@@ -14,4 +14,9 @@ public class Patient {
 
     @NotEmpty
     private String symptoms;
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }
