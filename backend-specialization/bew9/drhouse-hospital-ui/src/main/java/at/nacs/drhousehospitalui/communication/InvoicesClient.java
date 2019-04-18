@@ -25,10 +25,7 @@ public class InvoicesClient {
     }
 
     public void pay(String id) {
-        restTemplate.put(url + "/" + id + "/paid", Invoice.class);
+        restTemplate.put(url + id + "/paid", Invoice.class);
     }
-
-
-
 }
 

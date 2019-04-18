@@ -34,6 +34,4 @@ public class InvoiceController {
         client.pay(id);
         return "redirect:/invoices";
     }
-
-
 }
