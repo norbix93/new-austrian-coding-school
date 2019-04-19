@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Objects;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -55,9 +54,15 @@ public class InvoiceManager {
     }
 
     public Invoice pay(String id) {
-        Optional<Invoice> invoice = invoiceRepository.findById(Long.valueOf(id));
-        invoice.get().setPaid(true);
-        return invoice.orElse(null);
+        Invoice invoice = findById(id);
+        invoice.setPaid(true);
+        invoiceRepository.save(invoice);
+        return invoice;
+    }
+
+    private Invoice findById(String inputId) {
+        Long id = Long.valueOf(inputId);
+        return invoiceRepository.findById(id).orElse(null);
     }
 
     public Double calculateCost(PatientDTO patientDTO) {

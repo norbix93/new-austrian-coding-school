@@ -13,9 +13,10 @@ public class Accountant {
     private final InvoiceManager invoiceManager;
 
 
-    public void invoice(PatientDTO patientDTO) {
+    public PatientDTO invoice(PatientDTO patientDTO) {
         Patient patient = patientManager.convertToPatient(patientDTO);
         patientManager.save(patient);
         invoiceManager.createInvoice(patientDTO, patient);
+        return patientDTO;
     }
 }
