@@ -11,12 +11,12 @@
 <span>These invoices are currently registered in our database:</span>
 <table>
     <tr>
-        <th>List of invoices:</th>
-        <th>Patient:</th>
-        <th>Kind:</th>
-        <th>Symptoms:</th>
-        <th>Cost:</th>
-        <th>Paid:</th>
+        <th>Invoice ID</th>
+        <th>Patient</th>
+        <th>Kind</th>
+        <th>Symptoms</th>
+        <th>Cost</th>
+        <th>Paid</th>
     </tr>
     <tr th:each="invoice : ${invoices}">
         <td th:text="${invoice.id}">ID</td>
