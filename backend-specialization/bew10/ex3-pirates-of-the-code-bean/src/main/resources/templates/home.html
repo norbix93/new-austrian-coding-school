@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+    <link media="all" rel="stylesheet" th:href="@{/css/style.css}" type="text/css"/>
+</head>
+<body>
+<h1>Home</h1>
+<span>The Flying Dutchman is not cursed anymore:</span>
+<span th:text="${@diary.decipher}">Curse value</span>
+<form method="post" th:action="@{/logout}">
+    <button>Sign Out</button>
+</form>
+<a th:href="@{/diary}">Go to the diary</a>
+</body>
+</html>
