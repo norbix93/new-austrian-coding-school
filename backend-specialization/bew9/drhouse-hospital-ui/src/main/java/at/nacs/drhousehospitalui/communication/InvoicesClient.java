@@ -9,6 +9,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequiredArgsConstructor
@@ -16,16 +17,19 @@ public class InvoicesClient {
 
     private final RestTemplate restTemplate;
 
-    @Value("${invoices.server.url}")
-    private String url;
+    @Value("${invoices.url}")
+    private String invoicesUrl;
+
+    @Value("${invoices.paid.url}")
+    private String paidUrl;
 
     public List<Invoice> findAll() {
-        Invoice[] invoices = restTemplate.getForObject(url, Invoice[].class);
+        Invoice[] invoices = restTemplate.getForObject(invoicesUrl, Invoice[].class);
         return new ArrayList<>(Arrays.asList(invoices));
     }
 
-    public void pay(String id) {
-        restTemplate.put(url + id + "/paid", Invoice.class);
+    public void pay(Long id) {
+        restTemplate.put(paidUrl, null, Map.of("id", id));
     }
 }
 

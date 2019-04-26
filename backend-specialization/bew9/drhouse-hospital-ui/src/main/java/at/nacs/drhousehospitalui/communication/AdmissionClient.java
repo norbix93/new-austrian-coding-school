@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 public class AdmissionClient {
     private final RestTemplate restTemplate;
 
-    @Value("${admission.server.url}")
+    @Value("${admission.url}")
     private String url;
 
     public Patient send(Patient patient) {

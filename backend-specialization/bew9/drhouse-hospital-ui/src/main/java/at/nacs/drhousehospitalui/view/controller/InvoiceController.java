@@ -30,7 +30,7 @@ public class InvoiceController {
     }
 
     @PostMapping("/paid")
-    String pay(@RequestParam String id) {
+    String pay(@RequestParam Long id) {
         client.pay(id);
         return "redirect:/invoices";
     }

@@ -20,7 +20,7 @@
     </tr>
     <tr th:each="invoice : ${invoices}">
         <td th:text="${invoice.id}">ID</td>
-        <td th:text="${invoice.patient}">ID</td>
+        <td th:text="${invoice.patient.name}">Name</td>
         <td th:text="${invoice.kind}">Kind</td>
         <td th:text="${invoice.symptoms}">Symptoms</td>
         <td th:text="${invoice.cost}">Cost</td>
@@ -33,5 +33,8 @@
         </td>
     </tr>
 </table>
+<form method="post" th:action="@{/logout}">
+    <button>Sign Out</button>
+</form>
 </body>
 </html>
