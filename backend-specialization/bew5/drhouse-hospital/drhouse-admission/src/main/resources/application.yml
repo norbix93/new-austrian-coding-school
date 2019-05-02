@@ -1,7 +1,0 @@
-server:
-  port: 9001
-
-diagnosis:
-    port: http://localhost:9002/patients
-
-

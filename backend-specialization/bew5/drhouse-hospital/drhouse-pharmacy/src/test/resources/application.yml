@@ -1,8 +1,0 @@
-dataset:
-  diseases:
-    - condition: Headache
-      treatment: Buy these pills at the pharmacy, please.
-    - condition: Stomachache
-      treatment: Buy these pills at the pharmacy, please.
-    - condition: Chickenpox
-      treatment: Buy this cream at the pharmacy, please.
