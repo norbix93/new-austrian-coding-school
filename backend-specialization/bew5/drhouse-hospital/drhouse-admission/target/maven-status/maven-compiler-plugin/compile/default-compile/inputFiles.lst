@@ -1,0 +1,6 @@
+/home/norbert/IdeaProjects(NACS)/backend-specialization/bew5/drhouse-hospital/drhouse-admission/src/main/java/at/nacs/drhouseadmission/configuration/RestTemplateConfiguration.java
+/home/norbert/IdeaProjects(NACS)/backend-specialization/bew5/drhouse-hospital/drhouse-admission/src/main/java/at/nacs/drhouseadmission/communication/PatientsEndpoint.java
+/home/norbert/IdeaProjects(NACS)/backend-specialization/bew5/drhouse-hospital/drhouse-admission/src/main/java/at/nacs/drhouseadmission/controller/Admission.java
+/home/norbert/IdeaProjects(NACS)/backend-specialization/bew5/drhouse-hospital/drhouse-admission/src/main/java/at/nacs/drhouseadmission/model/Patient.java
+/home/norbert/IdeaProjects(NACS)/backend-specialization/bew5/drhouse-hospital/drhouse-admission/src/main/java/at/nacs/drhouseadmission/DrhouseAdmissionApplication.java
+/home/norbert/IdeaProjects(NACS)/backend-specialization/bew5/drhouse-hospital/drhouse-admission/src/main/java/at/nacs/drhouseadmission/communication/DiagnosisClient.java

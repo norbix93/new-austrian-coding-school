@@ -1,0 +1,16 @@
+server:
+  port: 9002
+
+database:
+  diseases:
+    - symptoms: Spots
+      condition: Chickenpox
+    - symptoms: Fever
+      condition: Hand, foot and mouth diseases
+    - symptoms: Scalp
+      condition: Head lice (Nits)
+    - symptoms: Rash
+      condition: Ringworm
+    - symptoms: Swollen neck
+      condition: Rubella (German Measles)
+

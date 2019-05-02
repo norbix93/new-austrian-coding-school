@@ -1,0 +1,19 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost/pharmacy
+
+server:
+  port: 9004
+
+accountancy:
+  port: http://localhost:9005/patients
+
+dataset:
+  diseases:
+    - condition: headache
+      treatment: pills
+    - condition: stomachache
+      treatment: pills
+    - condition: chickenpox
+      treatment: cream

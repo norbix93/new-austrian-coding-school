@@ -1,0 +1,22 @@
+server:
+  port: 9002
+
+pharmacy:
+  port: http://localhost:9004/patients
+
+beds:
+  port: http://localhost:9003/patients
+
+database:
+  diseases:
+    - symptoms: spots
+      condition: chickenpox
+    - symptoms: headache
+      condition: headache
+    - symptoms: stomachache
+      condition: stomachache
+    - symptoms: rash
+      condition: ringworm
+    - symptoms: swollen neck
+      condition: rubella
+

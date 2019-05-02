@@ -1,0 +1,20 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost/beds
+
+server:
+  port: 9003
+
+accountancy:
+  port: http://localhost:9005/patients
+
+dataset:
+  diseases:
+    - condition: headache
+      treatment: medicaments
+    - condition: stomachache
+      treatment: medicaments
+    - condition: chickenpox
+      treatment: cream
+

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Diary</title>
+    <link media="all" rel="stylesheet" th:href="@{/css/style.css}" type="text/css"/>
+</head>
+<body>
+<h1>Diary</h1>
+<p>Remove the curse from the Flying Dutchman.</p>
+<a th:href="@{/}">Go back to Jack Sparrow</a>
+<form method="post" th:action="@{/remove}">
+    <button>Remove the curse</button>
+</form>
+<form method="post" th:action="@{/logout}">
+    <button>Sign Out</button>
+</form>
+</body>
+</html>
