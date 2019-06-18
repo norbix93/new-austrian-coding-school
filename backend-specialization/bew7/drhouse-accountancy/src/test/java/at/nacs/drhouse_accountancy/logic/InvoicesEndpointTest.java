@@ -1,6 +1,5 @@
 package at.nacs.drhouse_accountancy.logic;
 
-import at.nacs.drhouse_accountancy.logic.InvoiceManager;
 import at.nacs.drhouse_accountancy.persistence.invoice.Invoice;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -101,5 +101,9 @@ class InvoiceManagerTest {
 
     @Test
     void calculateCost() {
+            double actual = invoiceManager.calculateCost(patientDTO);
+            double price = 5.01;
+
+            assertThat(actual).isEqualTo(price);
     }
 }
