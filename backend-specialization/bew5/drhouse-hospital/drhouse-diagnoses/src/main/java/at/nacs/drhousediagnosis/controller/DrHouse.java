@@ -23,15 +23,5 @@ public class DrHouse {
         if (patient.getDiagnosis().equalsIgnoreCase("Chickenpox")) {
             return bedsClient.send(patient);
         } else return pharmacyClient.send(patient);
-
-//    }
-//    public Patient createDiagnosis(Patient patient) {
-//
-//        String symptoms = patient.getSymptoms();
-//        String diagnosis = diseases.entrySet().stream()
-//                .filter(symptom -> symptom.getKey().equalsIgnoreCase(symptoms))
-//                .map(symptom -> symptom.getValue())
-//                .findFirst()
-//                .orElse("Lupus");
     }
 }
