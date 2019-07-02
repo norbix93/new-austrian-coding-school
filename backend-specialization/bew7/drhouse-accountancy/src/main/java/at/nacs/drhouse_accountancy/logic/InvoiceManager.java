@@ -20,6 +20,11 @@ public class InvoiceManager {
     private final InvoiceRepository invoiceRepository;
     private final Cashier cashier;
 
+    public Invoice invoice(Patient patient, PatientDTO patientDTO) {
+        Invoice invoice = createInvoice(patientDTO, patient);
+        return invoiceRepository.save(invoice);
+    }
+
     public Invoice createInvoice(PatientDTO patientDTO, Patient patient) {
         Invoice invoice = Invoice.builder()
                 .patient(patient)
@@ -31,7 +36,6 @@ public class InvoiceManager {
                 .paid(false)
                 .timestamp(LocalDateTime.now())
                 .build();
-        invoiceRepository.save(invoice);
         return invoice;
     }
 
